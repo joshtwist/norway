@@ -30,6 +30,27 @@
         },
         "operationId": "25de6fd1-f09f-4b22-99f0-9cd403ecd67a"
       }
+    },
+    "/hello-world": {
+      "x-zuplo-path": {
+        "pathMode": "open-api"
+      },
+      "get": {
+        "summary": "New Route",
+        "description": "Lorem ipsum dolor sit amet, **consectetur adipiscing** elit, sed do `eiusmod tempor` incididunt ut labore et dolore magna aliqua.",
+        "x-zuplo-route": {
+          "corsPolicy": "none",
+          "handler": {
+            "export": "default",
+            "module": "$import(./modules/hello-world)",
+            "options": {}
+          },
+          "policies": {
+            "inbound": []
+          }
+        },
+        "operationId": "6b07fea0-487b-40e4-aab6-b403061da6ae"
+      }
     }
   }
 }
